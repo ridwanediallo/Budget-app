@@ -21,12 +21,12 @@
     <%= form.text_field :icon %>
   </div>
 
-  <div>
+  <!-- <div>
     <%= form.label :user_id, style: "display: block" %>
     <%= form.text_field :user_id %>
-  </div>
+  </div> -->
 
   <div>
-    <%= form.submit %>
+    <%= form.submit data: {turbo: false} %>
   </div>
 <% end %>
