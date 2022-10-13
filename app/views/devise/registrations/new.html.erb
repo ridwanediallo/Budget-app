@@ -1,23 +1,21 @@
-<!-- <h2>Sign up</h2> -->
-<nav class="navbar">
-  <ul class="navbar-nav">
-    <li class="nav-item">icon</li>
-    <li class="nav-item">REGISTER</li>
-    <li class="nav-item">Next</li>
-  </ul>
-</nav>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
+  <nav class="nav-bg d-flex justify-content-between align-items-center">
+    <em class="bi bi-arrow-left-short icon"></em>
+    <p><strong>REGISTER</strong></p>
+    <%= f.submit "Next", data: {turbo: false}, class:"action-btn" %>
+  </nav>
+<div class="container mt-4">
   <div class="form-group">
     <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"form-control" %>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"form-control mb-2" %>
   </div>
 
   <div class="form-group">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control mb-2" %>
   </div>
 
   <div class="form-group">
@@ -25,17 +23,15 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", class:"form-control" %>
+    <%= f.password_field :password, autocomplete: "new-password", class:"form-control mb-2" %>
   </div>
 
   <div class="form-group">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control mb-2" %>
   </div>
+</div>
 
-  <div class="actions">
-    <%= f.submit "Sign up", data: {turbo: false} %>
-  </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
