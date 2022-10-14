@@ -1,3 +1,5 @@
+<%= render 'nav_menu/nav_bar' %>
+<div class="container">
 <h1>New entity</h1>
 
 <%= render "form", entity: @entity %>
@@ -5,5 +7,6 @@
 <br>
 
 <div>
-  <%= link_to "Back to entities", entities_path %>
+  <%= link_to "Back to entities", group_entities_path, class:'btn btn-primary' %>
+</div>
 </div>
