@@ -1,3 +1,5 @@
+<%= render 'nav_menu/nav_bar' %>
+<div class="container">
 <h1>New group</h1>
 
 <%= render "form", group: @group %>
@@ -5,5 +7,6 @@
 <br>
 
 <div>
-  <%= link_to "Back to groups", groups_path %>
+  <%= link_to "Back to groups", groups_path, class:'btn btn-primary' %>
+</div>
 </div>
