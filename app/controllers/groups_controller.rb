@@ -1,15 +1,15 @@
 class GroupsController < ApplicationController
   before_action :set_group, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /groups or /groups.json
   def index
-    # @groups = Group.all
-    @groups = current_user.groups.order(created_at: :desc)
-    # @groups = current_user.groups.order(created_at: :asc)
+    @groups = current_user.groups.includes(:entities).order(created_at: :asc)
   end
 
   # GET /groups/1 or /groups/1.json
   def show
+    @group = Group.find(params[:id])
   end
 
   # GET /groups/new
@@ -23,7 +23,6 @@ class GroupsController < ApplicationController
 
   # POST /groups or /groups.json
   def create
-    # @group = Group.new(group_params)
     @group = current_user.groups.new(group_params)
 
     respond_to do |format|
@@ -68,6 +67,6 @@ class GroupsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def group_params
-      params.require(:group).permit(:name, :icon)
+      params.require(:group).permit(:name, :icon )
     end
 end
