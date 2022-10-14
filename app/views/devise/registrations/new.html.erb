@@ -3,7 +3,9 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <nav class="nav-bg d-flex justify-content-between align-items-center">
-    <em class="bi bi-arrow-left-short icon"></em>
+     <%= link_to root_path do %>
+    <em class="bi bi-arrow-left-short icon text-white"></em>
+     <%end %>
     <p><strong>REGISTER</strong></p>
     <%= f.submit "Next", data: {turbo: false}, class:"action-btn" %>
   </nav>
