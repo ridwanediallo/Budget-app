@@ -11,20 +11,15 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="form-group mb-3">
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class:"form-control" %>
   </div>
 
-  <div>
+  <div class="form-group mb-3">
     <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
+    <%= form.file_field :icon, class:"form-control" %>
   </div>
-
-  <!-- <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
-  </div> -->
 
   <div>
     <%= form.submit data: {turbo: false} %>
