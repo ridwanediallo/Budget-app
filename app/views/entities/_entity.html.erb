@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li class="list-group-item">
+    <div class="d-flex">
+      <img src="<%= entity.group.icon %>" alt="icon" />
+      <p class="ms-4"><%= entity.name %></p>
+    </div>
+    <p><%= entity.description %></p>
+    <hr />
+    <p>Transaction Nº <%= entity.id %></p>
+    <p><%= entity.created_at %></p>
+    <hr />
+    <p>TOTAL PAYEMENT: <strong>$<%= entity.amount %></strong></p>
+  </li>
+</ul>
