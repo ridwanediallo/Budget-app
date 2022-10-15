@@ -4,10 +4,12 @@ RSpec.describe 'Entities', type: :request do
   include Devise::Test::IntegrationHelpers
   let(:user) { User.create(name: 'user', email: 'example@mail.com', password: 'password') }
   let(:group) do
-    Group.create(name: 'Group', icon: 'icon.png', description: 'description', created_at: Time.now, updated_at: Time.now, user_id: user.id)
+    Group.create(name: 'Group', icon: 'icon.png', description: 'description', created_at: Time.now,
+                 updated_at: Time.now, user_id: user.id)
   end
   let(:entity) do
-    Entity.create(name: 'Entity', amount: 20, description: 'description', created_at: Time.now, updated_at: Time.now, user_id: user.id)
+    Entity.create(name: 'Entity', amount: 20, description: 'description', created_at: Time.now, updated_at: Time.now,
+                  user_id: user.id)
   end
 
   describe 'GET /entities' do

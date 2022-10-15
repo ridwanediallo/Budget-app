@@ -4,9 +4,10 @@ RSpec.describe 'Groups', type: :request do
   include Devise::Test::IntegrationHelpers
   let(:user) { User.create(name: 'user', email: 'example@mail.com', password: 'password') }
   let(:group) do
-    Group.create(name: 'Group', icon: 'icon.png', description: 'description', created_at: Time.now, updated_at: Time.now, user_id: user.id)
+    Group.create(name: 'Group', icon: 'icon.png', description: 'description', created_at: Time.now,
+                 updated_at: Time.now, user_id: user.id)
   end
-  
+
   describe 'GET /groups' do
     before(:each) do
       sign_in user
