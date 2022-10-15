@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
- 
-/* @import url('https://fonts.googleapis.com/css?family=Proxima+Nova'); */
-
 @import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
 
 body {
@@ -93,7 +90,8 @@ input.action-btn {
 
 footer {
   position: fixed;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background: #5fb523;
 }
