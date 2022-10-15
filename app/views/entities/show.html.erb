@@ -11,8 +11,13 @@
 
 <div>
   <div class="d-flex justify-content-between mt-4">
+  <%= if can? :update, @entity %>
   <%= link_to "Edit this entity", edit_group_entity_path(@entity), class:'btn btn-primary' %>
+  <% end %>
+
+  <%= if can? :destroy, @entity %>
   <%= button_to "Destroy this entity", group_entity_path, method: :delete, class:'btn btn-danger' %>
+  <% end %>
   </div>
 
 </div>

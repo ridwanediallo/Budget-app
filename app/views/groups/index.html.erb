@@ -1,8 +1,7 @@
 <%= render 'nav_menu/nav_bar' %>
 <div class="container">
-<p style="color: green"><%= notice %></p>
 
-<div id="groups">
+<div class="mt-3">
   <% @groups.each do |group| %>
     <%= render group %>
     <p>
