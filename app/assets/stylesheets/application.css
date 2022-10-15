@@ -47,7 +47,7 @@ body {
 }
 
 input.action-btn {
-  background-color: Transparent;
+  background-color: transparent;
   border: none;
   color: #fff;
   margin-right: 10px;
@@ -55,7 +55,7 @@ input.action-btn {
 
 .navbar-toggler {
   border: none;
-  background-color: Transparent;
+  background-color: transparent;
 }
 
 .navbar-toggler .line {
