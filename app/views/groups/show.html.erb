@@ -11,13 +11,9 @@
 
 <div>
   <div class="d-flex justify-content-between">
-  <%= if can? :update, @group %>
-  <%= link_to "Edit this group", edit_group_path(@group), class:'btn btn-primary mt-4' %>
-  <% end %>
 
-  <%= if can? :destroy, @group %>
+  <%= link_to "Edit this group", edit_group_path(@group), class:'btn btn-primary mt-4' %>
   <%= button_to "Delete this group", @group, method: :delete, class:'btn btn-danger mt-4' %>
-  <% end %>
 </div>
 <%= link_to "See transactions", group_entities_path(@group.id), class:'btn btn-primary mt-4' %>
 </div>
