@@ -1,0 +1,18 @@
+<%= render 'nav_menu/nav_bar' %>
+<div class="container">
+
+<div class="mt-3">
+  <% @groups.each do |group| %>
+    <%= render group %>
+    <p>
+      <%= link_to "Show this group", group, class:'btn btn-primary' %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New group", new_group_path, class:'btn btn-primary' %>
+</div>
+
+<footer class="d-flex justify-content-center align-items-center py-4">
+  <button class="btn-scan mx-4">SCAN</button>
+</footer>

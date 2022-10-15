@@ -1,0 +1,15 @@
+
+<%= render 'nav_menu/nav_bar' %>
+<p style="color: green"><%= notice %></p>
+<div class="container">
+<div id="entities">
+  <% @entities.each do |entity| %>
+    <%= render entity %>
+    <p>
+      <%= link_to "Show this entity", group_entity_path(entity.group_id, entity.id), class:'btn btn-primary' %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New entity", new_group_entity_path, class:'btn btn-primary' %>
+</div>

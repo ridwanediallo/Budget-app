@@ -1,0 +1,13 @@
+<%= render 'nav_menu/nav_bar' %>
+<div class="container">
+<h1>Editing entity</h1>
+
+<%= render "form", entity: @entity %>
+
+<br>
+
+<div>
+  <%= link_to "Show this entity", group_entity_path, class:'btn btn-primary' %> |
+  <%= link_to "Back to entities", group_entities_path, class:'btn btn-primary' %>
+</div>
+</div>
