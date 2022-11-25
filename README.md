@@ -6,8 +6,8 @@
 
 ## Live Version
 
-- [heroku](https://budgetliv.herokuapp.com/)
-- [video-demo](https://youtu.be/9T7Woh7oXmM)
+- [See the app online](https://budgetliv.herokuapp.com/)
+
 ## Built With
 
 - ![](https://img.shields.io/badge/Github-blueviolet)
