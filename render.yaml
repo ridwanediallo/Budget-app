@@ -1,6 +1,6 @@
 databases:
   - name: postgres
-    ipAllowList: []
+    databaseName: budget_development
 
 services:
   - type: web
@@ -17,6 +17,5 @@ services:
         sync: false
 - type: redis
   name: redis
-  ipAllowList: []
   plan: free
   maxmemoryPolicy: noeviction
