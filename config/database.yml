@@ -23,6 +23,7 @@ default: &default
 
 development:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: budget_development
 
   # The specified database role being used to connect to postgres.
