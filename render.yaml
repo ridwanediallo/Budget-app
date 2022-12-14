@@ -1,6 +1,6 @@
 databases:
   - name: postgres
-    databaseName: budget-app
+    databaseName: budgetApp
 
 services:
   - type: web
