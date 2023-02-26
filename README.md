@@ -5,9 +5,10 @@
 
 
 ## Live Version
+- [Budget app](https://ridridgo.onrender.com/)
 
-- [heroku](https://budgetliv.herokuapp.com/)
-- [video-demo](https://youtu.be/9T7Woh7oXmM)
+<!-- - [heroku](https://budgetliv.herokuapp.com/) -->
+<!-- - [video-demo](https://youtu.be/9T7Woh7oXmM) -->
 ## Built With
 
 - ![](https://img.shields.io/badge/Github-blueviolet)
