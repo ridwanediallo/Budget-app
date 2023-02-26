@@ -61,11 +61,6 @@ Install all project dependencies by running the command below
 - Twitter: [@twitterridwan](https://twitter.com/RidwaneD)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ridwan-diallo)
 
-## Setup
-
-If you wish to run the project locally, please do the following:
-
-- Clone the repository to your local machine. - **`git clone git@github.com:ridwanediallo/Budget-app.git`**
 
 ## 🤝 Contributing
 
